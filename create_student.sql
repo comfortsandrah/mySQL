@@ -1,3 +1,4 @@
+-- SQLBook: Code
 --Script to create students table fields: student_id,first_name,last_name,year_of_birth,year_of_enrollment
 USE sandy;
 CREATE TABLE IF NOT EXISTS students (

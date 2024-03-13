@@ -1,3 +1,4 @@
+-- SQLBook: Code
 --Script for creating lecturer table fields: lecturer_id,name,title,office_room
 USE sandy;
 CREATE TABLE IF NOT EXISTS lecturers (

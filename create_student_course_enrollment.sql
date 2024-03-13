@@ -1,3 +1,4 @@
+-- SQLBook: Code
 USE sandy;
 CREATE TABLE IF NOT EXISTS student_course_enrollment (
     student_id INT NOT NULL,
