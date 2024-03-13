@@ -8,3 +8,5 @@ CREATE TABLE IF NOT EXISTS students (
     year_of_birth INT NOT NULL,
     year_of_enrollment INT NOT NULL
 );
+
+INSERT INTO 

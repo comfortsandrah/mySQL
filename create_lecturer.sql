@@ -8,3 +8,4 @@ CREATE TABLE IF NOT EXISTS lecturers (
     office_room VARCHAR(100) NOT NULL
 );
 ```
+-- SQLBook: Code
