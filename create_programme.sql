@@ -7,8 +7,12 @@ CREATE TABLE IF NOT EXISTS programmes (
     programme_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     duration INT NOT NULL,
-    level VARCHAR(100) NOT NULL
+    level VARCHAR(100) NOT NULL,
+    school_id INT ,
+    FOREIGN KEY (school_id) REFERENCES schools(school_id)
 ); 
+
+
 --Script to insert values into programmes table
 INSERT INTO programmes (title, duration, level) VALUES 
 ('B.Sc. Computer Science', 4, 'Undergraduate'),

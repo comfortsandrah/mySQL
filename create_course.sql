@@ -3,10 +3,14 @@
 USE sandy;
 CREATE TABLE IF NOT EXISTS courses (
     course_id INT AUTO_INCREMENT PRIMARY KEY,    
-    course_title VARCHAR(100) NOT NULL
+    course_title VARCHAR(100) NOT NULL,
+    prerequisite_id INT,
+    programme_id INT,
+    FOREIGN KEY (prerequisite_id) REFERENCES courses(course_id),
+    FOREIGN KEY (programme_id) REFERENCES programmes(programme_id) ON DELETE CASCADE
 );
-ALTER TABLE courses
-ADD prerequisite_id INT PRIMARY KEY;
+
+
  
 --Script to insert values into courses table: course_title
 INSERT INTO courses (course_title) VALUES
@@ -18,7 +22,7 @@ INSERT INTO courses (course_title) VALUES
 ('Internal Medicine'),
 ('Pharmacology'),
 ('Architectural Design Studio'),
-('Architectural History')
+('Architectural History'),
 ('Building Technology and Materials'),
 ('Cinematography'),
 ('Film Editing'),

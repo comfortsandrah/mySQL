@@ -6,7 +6,9 @@ CREATE TABLE IF NOT EXISTS students (
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
     year_of_birth INT NOT NULL,
-    year_of_enrollment INT NOT NULL
+    year_of_enrollment INT NOT NULL,
+    programme_id INT NOT NULL,
+    FOREIGN KEY (programme_id) REFERENCES programmes(programme_id)
 );
 
 INSERT INTO 
