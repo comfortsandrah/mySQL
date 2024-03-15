@@ -65,4 +65,3 @@ INSERT INTO student_course_enrollment (student_id, course_id, year, term, grade)
 (51, 4, 2021, 'Fall', 'A');
 
 SELECT * FROM student_course_enrollment;
-```
