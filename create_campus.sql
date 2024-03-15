@@ -18,3 +18,5 @@ INSERT INTO campuses (name, address, distance_to_the_city_center, bus_plate_numb
 ('Mombasa Campus', '20300 msa', 15, 'MOMBASA-1ABC'),
 ('Eldoret Campus', '20400 eld', 10, 'ELDORET-1ABC'),
 ('Kisii Campus', '20500 kis', 15, 'KISII-1ABC');  
+
+SELECT * FROM campuses;
